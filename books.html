@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>READNEST BOOKSTORE</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    
+    <style>
+        .left-img {
+            width: 250px;
+            margin-right: 8cm;
+        }
+        .right-img {
+            width: 250px;
+            margin-left: 8cm;
+        }
+        
+        /* Dropdown Navigation Styles */
+        .navbar {
+            text-align: center;
+            position: relative;
+        }
+        .dropdown {
+            display: inline-block;
+        }
+        .dropbtn {
+            background-color: white;
+            color: #670b92;
+            font-size: 18px;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+            border-radius: 5px;
+        }
+        .dropdown-content a {
+            color: #670b92;
+            padding: 12px 16px;
+            display: block;
+            text-decoration: none;
+        }
+        .dropdown-content a:hover {
+            background-color: #e6e6e6;
+            border-radius: 5px;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header style="background-image: url('images/back2.jpg'); background-repeat: no-repeat; background-size: cover;">
+        <div class="logo">
+            <img src="images/photo2.png" class="left-img" alt="Left Image">
+            <img style="width: 300px" src="images/logoo.png" alt="Shiyama's Bookstore Logo">
+            <img src="images/photo2.png" class="right-img" alt="Right Image">
+            <h1 style="color: #670b92"><u>"READNEST BOOKSTORE"</u></h1>
+            <br>
+            <h2 style="color: #670b92">"Bringing Stories to Life since 2025"</h2> 
+            <br> 
+        </div>  
+        
+        <nav class="navbar">
+            <div class="dropdown">
+                <button class="dropbtn">Books▼</button>
+                <div class="dropdown-content">
+                    <a href="index.html">Home</a>
+                    <a href="books.html">Books</a>
+                    <a href="cart.html">Cart</a>
+                    <a href="about-us.html">About Us</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="book-list">
+        <h2>Available Books</h2>
+        <input type="text" id="search-box" placeholder="Search books..." onkeyup="searchBooks()">
+        <br><br>
+        <div id="books-container" class="book-grid"></div>
+    </section>
+
+</body>
+</html>
