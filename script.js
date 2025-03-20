@@ -224,10 +224,7 @@ document.addEventListener("DOMContentLoaded", function () {
         return "We currently have a 10% discount on orders above ₹500. Use code READ10 at checkout!";  
     } else if (message.includes("return policy")) {  
         return "You can return books within 7 days if they are in original condition. Check our return policy page for more details.";  
-    } else {  
-        return "I'm here to help! Ask about books, prices, your cart, or orders.";  
-    }
-}
+    } 
 
         
         else {
