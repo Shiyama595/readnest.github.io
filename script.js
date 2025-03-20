@@ -204,12 +204,32 @@ document.addEventListener("DOMContentLoaded", function () {
         }    
           else if (message.includes("600")   || message.includes("700")) {
             return "Books that range from 600 to 700 are: The Beasts We Bury,The Midnight Library,Harry Potter and the Goblet of Fire,Harry potter and the order of pheonix";
-    
-        } 
+       } 
         else if (message.includes("100")   || message.includes("300")) {
             return "Books that range from 100 to 300 are: Moonlight Healers,Our infinite Fates,Something in the walls";
-    
-        } 
+       } 
+       else if (message.includes("author")) {  
+        return "Looking for books by a specific author? Let me know the name, and I'll find recommendations for you!";  
+    } else if (message.includes("bestseller")) {  
+        return "Our current bestsellers are: 'Fourth Wing', 'Iron Flame', and 'It Ends With Us'.";  
+    } else if (message.includes("genre")) {  
+        return "We have books in various genres like Fiction, Mystery, Fantasy, Romance, and Science Fiction. What genre are you interested in?";  
+    } else if (message.includes("stock")) {  
+        return "Most of our books are in stock! Let me know which book you're looking for, and I'll check availability.";  
+    } else if (message.includes("order status")) {  
+        return "To track your order, go to 'My Orders' in your account section.";  
+    } else if (message.includes("delivery")) {  
+        return "Standard delivery takes 3-5 business days. Express delivery is available for select locations.";  
+    } else if (message.includes("discount") || message.includes("offer")) {  
+        return "We currently have a 10% discount on orders above ₹500. Use code READ10 at checkout!";  
+    } else if (message.includes("return policy")) {  
+        return "You can return books within 7 days if they are in original condition. Check our return policy page for more details.";  
+    } else {  
+        return "I'm here to help! Ask about books, prices, your cart, or orders.";  
+    }
+}
+
+        
         else {
             return "I'm here to help! Ask about books, prices, or your cart.";
         }
