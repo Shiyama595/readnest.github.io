@@ -1,43 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>READNEST BOOKSTORE</title>
-    
+    <title>ReadNest Bookstore | Best Online Bookstore 2025</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="ReadNest Bookstore – Explore top books, latest picks, and your favorite genres. Bringing stories to life since 2025.">
+    <meta name="keywords" content="ReadNest, online bookstore, books 2025, buy books online, best books, novels, top picks, fiction, non-fiction">
+    <meta name="author" content="Shiyama Priya G.">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header  style="background-image: url('images/back2.jpg'); background-repeat: no-repeat; background-size: cover;">
-         >
+    <header style="background-image: url('images/back2.jpg'); background-repeat: no-repeat; background-size: cover;">
         <div class="logo">
             <style>
                 body {
-                  background-image: url('images/back1.jpg');
-                  background-repeat: no-repeat;
-                  background-attachment: fixed;
-                  background-size: 100% 100%;
+                    background-image: url('images/back1.jpg');
+                    background-repeat: no-repeat;
+                    background-attachment: fixed;
+                    background-size: 100% 100%;
                 }
             </style>
-           
-            <img src="images/photo2.png" class="left-img" alt="Left Image">
-            <img  style="width: 300px" src="images/logoo.png" alt="Shiyama's Bookstore Logo">
-            <img src="images/photo2.png" class="right-img" alt="Right Image">
-    
-            <h1 style="color: #670b92 "><u>"READNEST BOOKSTORE"</u></h1>
-    
-            <br>
-            <h2 style="color: #670b92">"Bringing Stories to Life since 2025"</h2> 
-            <br> 
+
+            <img src="images/photo2.png" class="left-img" alt="Decorative Book Image Left">
+            <img style="width: 300px" src="images/logoo.png" alt="ReadNest Bookstore Logo">
+            <img src="images/photo2.png" class="right-img" alt="Decorative Book Image Right">
+
+            <h1 style="color: #670b92;"><u>ReadNest Bookstore</u></h1>
+            <h2 style="color: #670b92;">Bringing Stories to Life since 2025</h2>
+
             <style>
                 .left-img {
-                  width:250px;
-                  margin-right: 8cm;
+                    width: 250px;
+                    margin-right: 8cm;
                 }
-                .right-img{
-                  width: 250px;
-                  margin-left: 8cm;
+                .right-img {
+                    width: 250px;
+                    margin-left: 8cm;
                 }
 
-                /* Dropdown Navigation Styles */
                 .navbar {
                     text-align: center;
                     position: relative;
@@ -77,15 +80,15 @@
                     display: block;
                 }
             </style>
-        </div>         
+        </div>
 
-        <nav class="navbar">
+        <nav class="navbar" aria-label="Main Navigation">
             <div class="dropdown">
                 <button class="dropbtn">Home ▼</button>
                 <div class="dropdown-content">
                     <a href="index.html">Home</a>
                     <a href="books.html">Books</a>
-                    <a href="cart.html">Cart </a>
+                    <a href="cart.html">Cart</a>
                     <a href="about-us.html">About Us</a>
                     <a href="contact.html">Contact</a>
                 </div>
@@ -93,42 +96,42 @@
         </nav>
     </header>
 
-    <section style="color: #670b92;">
-        <h2 style="color: #ffffff">THIS WEEK'S TOP PICKS....</h2>
-        <div class="quote-grid">
-            <div class="quote">
-                <img src="images/book15.jpg" alt="Books Quote 1">
-                <h3 style="color:  blueviolet;">Ruthless Vows</h3>
+    <main>
+        <section style="color: #670b92;">
+            <h2 style="color: #ffffff;">This Week's Top Picks</h2>
+            <div class="quote-grid">
+                <div class="quote">
+                    <img src="images/book15.jpg" alt="Ruthless Vows Book Cover">
+                    <h3 style="color: blueviolet;">Ruthless Vows</h3>
+                </div>
+                <div class="quote">
+                    <img src="images/book24.jpg" alt="The Midnight Library Book Cover">
+                    <h3 style="color: blueviolet;">The Midnight Library</h3>
+                </div>
+                <div class="quote">
+                    <img src="images/book20.jpg" alt="The Beasts We Bury Book Cover">
+                    <h3 style="color: blueviolet;">The Beasts We Bury</h3>
+                </div>
             </div>
-            <div class="quote">
-                <img src="images/book24.jpg" alt="Books Quote 2">
-                <h3 style="color:  blueviolet;">The Midnight Library</h3>
-            </div>
-            <div class="quote">
-                <img src="images/book20.jpg" alt="Books Quote 3">
-                <h3 style="color: blueviolet">The Beasts we Bury</h3>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <script src="script.js"></script>
-<!-- Chatbot Button -->
-<!-- Chatbot -->
-<div id="chatbot-container">
-    <button id="chatbot-toggle">Chat with Us</button>
-    <div id="chatbot">
-        <div id="chat-header">
-            <h3>ReadNest Chatbot</h3>
-            <button id="close-chatbot">X</button>
-        </div>
-        <div id="chat-messages"></div>
-        <div id="chat-input-area">
-            <input type="text" id="chat-input" placeholder="Ask about books...">
-            <button id="send-btn">Send</button>
+
+    <!-- Chatbot Button -->
+    <div id="chatbot-container">
+        <button id="chatbot-toggle">Chat with Us</button>
+        <div id="chatbot">
+            <div id="chat-header">
+                <h3>ReadNest Chatbot</h3>
+                <button id="close-chatbot">X</button>
+            </div>
+            <div id="chat-messages"></div>
+            <div id="chat-input-area">
+                <input type="text" id="chat-input" placeholder="Ask about books...">
+                <button id="send-btn">Send</button>
+            </div>
         </div>
     </div>
-</div>
-
 </body>
 </html>
-
